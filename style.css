@@ -164,7 +164,15 @@ body{
   z-index:1
 }
 
-
+#label{
+  font-family: 'Play';
+  font-size: 30px;
+  z-index:1;
+  position:absolute;
+  color: white;
+  top: 190px;
+  right: 200px;
+}
 
 
 .line {
