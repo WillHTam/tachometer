@@ -149,8 +149,23 @@ body{
     border-style: solid;
     border-color:#171717 #F14134 #171717 #171717;
     transform:rotate(77deg);
-    z-index:1
+    z-index:0
     }
+
+#redline2{
+  width:28px; height:150px;
+  position:absolute;
+  top:390px;
+  right: 75px;
+  border-width: 22px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color:#171717 #F14134 #171717 #171717;
+  transform:rotate(45deg);
+  z-index:1
+}
+
+
 
 
 .line {
