@@ -8,6 +8,9 @@ engineIdle.play();
 
 if (annyang) {
   var commands = {
+    'test': function () {
+      console.log('test confirmed')
+    },
     'hello': function () {
       console.log('hello to you too')
     },
@@ -16,6 +19,9 @@ if (annyang) {
     },
     'vroom': function () {
       console.log('command vroom')
+    },
+    'broom': function () {
+      console.log('command broom')
     }
   }
   annyang.addCommands(commands)
