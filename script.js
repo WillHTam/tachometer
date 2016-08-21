@@ -6,6 +6,8 @@ engineIdle.addEventListener('ended', function() {
 }, false);
 engineIdle.play();
 
+engineRev = new Audio('purr.mp3')
+
 if (annyang) {
   var commands = {
     'test': function () {
@@ -16,12 +18,19 @@ if (annyang) {
     },
     'varoom': function () {
       console.log('command varoom')
+      engineRev.play();
     },
     'vroom': function () {
       console.log('command vroom')
+      engineRev.play();
     },
     'broom': function () {
       console.log('command broom')
+      engineRev.play();
+    },
+    'veroom': function() {
+      console.log('command veroom')
+      engineRev.play();
     }
   }
   annyang.addCommands(commands)
