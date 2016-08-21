@@ -12,17 +12,23 @@ if (annyang) {
   var commands = {
     'test': function () {
       console.log('test confirmed')
+      engineRev.play()
+      $('.line').toggleClass('rotate')
     },
     'hello': function () {
       console.log('hello to you too')
+      engineRev.play()
+      $('.line').toggleClass('rotate')
     },
     'varoom': function () {
       console.log('command varoom')
       engineRev.play()
+      $('.line').toggleClass('rotate')
     },
     'vroom': function () {
       console.log('command vroom')
       engineRev.play()
+      $('.line').toggleClass('rotate')
     },
     'broom': function () {
       console.log('command broom')
@@ -32,6 +38,7 @@ if (annyang) {
     'veroom': function () {
       console.log('command veroom')
       engineRev.play()
+      $('.line').toggleClass('rotate')
     }
   }
   annyang.addCommands(commands)
