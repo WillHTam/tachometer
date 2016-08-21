@@ -239,7 +239,7 @@ body{
 
 .rotate {
   animation: rotator;
-  animation-duration: 0.5s;
+  animation-duration: 1.5s;
 }
 
 @keyframes rotator {
@@ -251,5 +251,11 @@ body{
     }
     80% {
       transform:rotate(120deg);
+    }
+    90% {
+      transform:rotate(0deg);
+    }
+    100% {
+      transform:rotate(-50deg);
     }
 }
