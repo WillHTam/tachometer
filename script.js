@@ -1,10 +1,10 @@
 
-engineIdle = new Audio('idle.mp3');
-engineIdle.addEventListener('ended', function() {
-    this.currentTime = 0;
-    this.play();
-}, false);
-engineIdle.play();
+engineIdle = new Audio('idle.mp3')
+engineIdle.addEventListener('ended', function () {
+    this.currentTime = 0
+    this.play()
+}, false)
+engineIdle.play()
 
 engineRev = new Audio('purr.mp3')
 
@@ -18,19 +18,20 @@ if (annyang) {
     },
     'varoom': function () {
       console.log('command varoom')
-      engineRev.play();
+      engineRev.play()
     },
     'vroom': function () {
       console.log('command vroom')
-      engineRev.play();
+      engineRev.play()
     },
     'broom': function () {
       console.log('command broom')
-      engineRev.play();
+      engineRev.play()
+      $('.line').toggleClass('rotate')
     },
-    'veroom': function() {
+    'veroom': function () {
       console.log('command veroom')
-      engineRev.play();
+      engineRev.play()
     }
   }
   annyang.addCommands(commands)
